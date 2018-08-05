@@ -1,0 +1,116 @@
+2018-07-13T20:09:45+00:00 WARN (4): [2] Error while sending STMT_CLOSE packet. PID=17214 (/var/www/html/socialengine/application/libraries/Zend/Db/Statement/Mysqli.php) [105]
+Error Code: 6a2c5a
+Stack trace:
+#0 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement_Mysqli->close()
+#1 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Adapter_Mysqli->prepare()
+#2 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1577): Zend_Db_Adapter_Abstract->query()
+#3 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1439): Zend_Db_Table_Abstract->_fetch()
+#4 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Tasks.php(299): Zend_Db_Table_Abstract->fetchRow()
+#5 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Tasks.php(257): Core_Model_DbTable_Tasks->_triggerCheck()
+#6 /var/www/html/socialengine/application/modules/Core/Bootstrap.php(90): Core_Model_DbTable_Tasks->trigger()
+#7 /var/www/html/socialengine/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#8 /var/www/html/socialengine/application/index.php(223): Engine_Application->run()
+#9 /var/www/html/socialengine/index.php(77): include('/var/www/html/socialengine/appli...')
+#10 {main}
+
+2018-07-13T20:09:46+00:00 WARN (4): [2] Error while sending STMT_CLOSE packet. PID=17260 (/var/www/html/socialengine/application/libraries/Zend/Db/Statement/Mysqli.php) [105]
+Error Code: bafcee
+Stack trace:
+#0 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement_Mysqli->close()
+#1 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Adapter_Mysqli->prepare()
+#2 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1577): Zend_Db_Adapter_Abstract->query()
+#3 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1439): Zend_Db_Table_Abstract->_fetch()
+#4 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Tasks.php(299): Zend_Db_Table_Abstract->fetchRow()
+#5 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Tasks.php(257): Core_Model_DbTable_Tasks->_triggerCheck()
+#6 /var/www/html/socialengine/application/modules/Core/Bootstrap.php(90): Core_Model_DbTable_Tasks->trigger()
+#7 /var/www/html/socialengine/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#8 /var/www/html/socialengine/application/index.php(223): Engine_Application->run()
+#9 /var/www/html/socialengine/index.php(77): include('/var/www/html/socialengine/appli...')
+#10 {main}
+
+2018-07-13T20:15:20+00:00 WARN (4): [2] mysqli::prepare(): MySQL server has gone away (/var/www/html/socialengine/application/libraries/Zend/Db/Statement/Mysqli.php) [70]
+Error Code: 94d1e8
+Stack trace:
+#0 /var/www/html/socialengine/application/libraries/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare()
+#1 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Mysqli.php(388): Zend_Db_Statement->__construct()
+#2 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Adapter_Mysqli->prepare()
+#3 /var/www/html/socialengine/application/libraries/Zend/Db/Select.php(711): Zend_Db_Adapter_Abstract->query()
+#4 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Statistics.php(104): Zend_Db_Select->query()
+#5 /var/www/html/socialengine/application/modules/Core/widgets/admin-statistics/Controller.php(57): Core_Model_DbTable_Statistics->getTotal()
+#6 /var/www/html/socialengine/application/libraries/Engine/Content/Widget/Abstract.php(254): Core_Widget_AdminStatisticsController->indexAction()
+#7 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Widget.php(73): Engine_Content_Widget_Abstract->render()
+#8 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#9 /var/www/html/socialengine/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#10 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render()
+#11 /var/www/html/socialengine/application/libraries/Engine/View/Helper/Content.php(80): Engine_Content_Element_Abstract->render()
+#12 /var/www/html/socialengine/application/modules/Core/views/scripts/admin-index/index.tpl(18): Engine_View_Helper_Content->renderWidget('core.admin-statistics')
+#13 /var/www/html/socialengine/application/libraries/Zend/View.php(157): unknown()
+#14 /var/www/html/socialengine/application/libraries/Zend/View/Abstract.php(888): Zend_View->_run()
+#15 /var/www/html/socialengine/application/libraries/Zend/Controller/Action/Helper/ViewRenderer.php(912): Zend_View_Abstract->render()
+#16 /var/www/html/socialengine/application/libraries/Zend/Controller/Action/Helper/ViewRenderer.php(933): Zend_Controller_Action_Helper_ViewRenderer->renderScript()
+#17 /var/www/html/socialengine/application/libraries/Zend/Controller/Action/Helper/ViewRenderer.php(972): Zend_Controller_Action_Helper_ViewRenderer->render()
+#18 /var/www/html/socialengine/application/libraries/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#19 /var/www/html/socialengine/application/libraries/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#20 /var/www/html/socialengine/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch()
+#21 /var/www/html/socialengine/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch()
+#22 /var/www/html/socialengine/application/modules/Core/Bootstrap.php(84): Zend_Controller_Front->dispatch()
+#23 /var/www/html/socialengine/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#24 /var/www/html/socialengine/application/index.php(223): Engine_Application->run()
+#25 /var/www/html/socialengine/index.php(77): include('/var/www/html/socialengine/appli...')
+#26 {main}
+
+2018-07-13T20:18:26+00:00 WARN (4): [2] Error while sending STMT_CLOSE packet. PID=18482 (/var/www/html/socialengine/application/libraries/Zend/Db/Statement/Mysqli.php) [105]
+Error Code: a667a1
+Stack trace:
+#0 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement_Mysqli->close()
+#1 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Adapter_Mysqli->prepare()
+#2 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1577): Zend_Db_Adapter_Abstract->query()
+#3 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1439): Zend_Db_Table_Abstract->_fetch()
+#4 /var/www/html/socialengine/application/modules/Core/Model/DbTable/Pages.php(46): Zend_Db_Table_Abstract->fetchRow()
+#5 /var/www/html/socialengine/application/libraries/Engine/Content.php(215): Core_Model_DbTable_Pages->loadContent()
+#6 /var/www/html/socialengine/application/libraries/Engine/View/Helper/Content.php(47): Engine_Content->render()
+#7 /var/www/html/socialengine/application/libraries/Zend/View/Abstract.php(350): Engine_View_Helper_Content->content('header')
+#8 /var/www/html/socialengine/application/modules/Core/layouts/scripts/default.tpl(15): Zend_View_Abstract->__call('content', Array)
+#9 /var/www/html/socialengine/application/modules/Core/layouts/scripts/default.tpl(15): Zend_View->content('header')
+#10 /var/www/html/socialengine/application/libraries/Zend/View.php(157): unknown()
+#11 /var/www/html/socialengine/application/libraries/Zend/View/Abstract.php(888): Zend_View->_run()
+#12 /var/www/html/socialengine/application/libraries/Zend/Layout.php(796): Zend_View_Abstract->render()
+#13 /var/www/html/socialengine/application/libraries/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#14 /var/www/html/socialengine/application/libraries/Zend/Controller/Plugin/Broker.php(333): Zend_Layout_Controller_Plugin_Layout->postDispatch()
+#15 /var/www/html/socialengine/application/libraries/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch()
+#16 /var/www/html/socialengine/application/modules/Core/Bootstrap.php(84): Zend_Controller_Front->dispatch()
+#17 /var/www/html/socialengine/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#18 /var/www/html/socialengine/application/index.php(223): Engine_Application->run()
+#19 /var/www/html/socialengine/index.php(77): include('/var/www/html/socialengine/appli...')
+#20 {main}
+
+2018-07-13T20:22:30+00:00 WARN (4): [2] Error while sending STMT_CLOSE packet. PID=865 (/var/www/html/socialengine/application/libraries/Zend/Db/Statement/Mysqli.php) [105]
+Error Code: 45b929
+Stack trace:
+#0 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement_Mysqli->close()
+#1 /var/www/html/socialengine/application/libraries/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Adapter_Mysqli->prepare()
+#2 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1577): Zend_Db_Adapter_Abstract->query()
+#3 /var/www/html/socialengine/application/libraries/Zend/Db/Table/Abstract.php(1392): Zend_Db_Table_Abstract->_fetch()
+#4 /var/www/html/socialengine/application/modules/Core/Api/Menus.php(169): Zend_Db_Table_Abstract->fetchAll()
+#5 /var/www/html/socialengine/application/modules/Core/Api/Menus.php(32): Core_Api_Menus->getMenu()
+#6 /var/www/html/socialengine/application/modules/Core/Api/Menus.php(24): Core_Api_Menus->getMenuParams()
+#7 /var/www/html/socialengine/application/modules/Core/widgets/admin-menu-main/Controller.php(25): Core_Api_Menus->getNavigation()
+#8 /var/www/html/socialengine/application/libraries/Engine/Content/Widget/Abstract.php(254): Core_Widget_AdminMenuMainController->indexAction()
+#9 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Widget.php(73): Engine_Content_Widget_Abstract->render()
+#10 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#11 /var/www/html/socialengine/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#12 /var/www/html/socialengine/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render()
+#13 /var/www/html/socialengine/application/libraries/Engine/View/Helper/Content.php(80): Engine_Content_Element_Abstract->render()
+#14 /var/www/html/socialengine/application/modules/Core/layouts/scripts/admin.tpl(191): Engine_View_Helper_Content->renderWidget('core.admin-menu-main')
+#15 /var/www/html/socialengine/application/libraries/Zend/View.php(157): unknown()
+#16 /var/www/html/socialengine/application/libraries/Zend/View/Abstract.php(888): Zend_View->_run()
+#17 /var/www/html/socialengine/application/libraries/Zend/Layout.php(796): Zend_View_Abstract->render()
+#18 /var/www/html/socialengine/application/libraries/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#19 /var/www/html/socialengine/application/libraries/Zend/Controller/Plugin/Broker.php(333): Zend_Layout_Controller_Plugin_Layout->postDispatch()
+#20 /var/www/html/socialengine/application/libraries/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch()
+#21 /var/www/html/socialengine/application/modules/Core/Bootstrap.php(84): Zend_Controller_Front->dispatch()
+#22 /var/www/html/socialengine/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#23 /var/www/html/socialengine/application/index.php(223): Engine_Application->run()
+#24 /var/www/html/socialengine/index.php(77): include('/var/www/html/socialengine/appli...')
+#25 {main}
+
